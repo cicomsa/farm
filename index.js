@@ -1,5 +1,5 @@
 const {Wheat, Sugarcane} = require('./crops')
-const { Cow, Pig, Horse} = require('./animals')
+const {Cow, Pig, Horse} = require('./animals')
 
 class Farm {
   constructor(name) {
@@ -39,7 +39,7 @@ class Farm {
     console.log("------------------")
 
   }
-  }
+}
 
 
   module.exports.Farm = Farm
