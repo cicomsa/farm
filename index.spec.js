@@ -1,9 +1,7 @@
-// index.spec.js
 const {Farm} = require('./index')
 const {Wheat, Sugarcane} = require('./crops')
 const { Cow, Pig, Horse} = require('./animals')
 // const {Crop} = require('./crops')
-
 
 test('A new Farm can be created', () => {
   const farm = new Farm()
@@ -22,14 +20,12 @@ test('We can add a crop to our farm', () => {
 })
 
 // add to index.spec.js
-
 test('The income of an empty farm is 0', () => {
   const farm = new Farm('TEST_NAME')
   expect(farm.calculateIncome()).toBe(0)
 })
 
 // add to index.spec.js
-
 test('The income of a 100 Wheat + 100 Sugarcane farm is X', () => {
   const farm = new Farm('TEST_NAME')
   farm.addCrop(new Wheat(100))
@@ -38,7 +34,6 @@ test('The income of a 100 Wheat + 100 Sugarcane farm is X', () => {
 })
 
 // add to index.spec.js
-
 test('Animals can be added to the farm', () => {
   const farm = new Farm()
   farm.addAnimal(new Cow(100))

@@ -41,5 +41,4 @@ class Farm {
   }
 }
 
-
 module.exports.Farm = Farm

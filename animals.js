@@ -11,7 +11,6 @@ class Pig extends Animal {
   constructor(age) {
     super(age)
     this.price = 4
-
   }
 
   getWeightInKg() {
@@ -25,7 +24,6 @@ class Cow extends Animal {
   constructor(age) {
     super(age)
     this.price = 5
-
   }
   getWeightInKg() {
     return Math.min(this.age*1.5,1200)
@@ -37,13 +35,11 @@ class Horse extends Animal {
   constructor(age) {
     super(age)
     this.price = 10
-    
   }
   getWeightInKg() {
     return Math.min(this.age*1.7,1000)
   }
   getValueInEuros() {}
-
 }
 
-module.exports = { Pig, Cow, Horse}
+module.exports = {Pig, Cow, Horse}

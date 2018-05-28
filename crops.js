@@ -4,7 +4,6 @@ class Crop {
     this.acres = acres
   }
 
-
   getYieldInEuros() {
     return this.getYieldInKg() * this.price
   }
@@ -12,8 +11,6 @@ class Crop {
     return this.costs * this.acres
   }
 }
-
-
 
 class Wheat extends Crop{
   constructor(...args) {
@@ -27,7 +24,6 @@ class Wheat extends Crop{
   }
 }
 
-
 class Sugarcane extends Crop {
   constructor(...args) {
    super(...args)
@@ -36,9 +32,7 @@ class Sugarcane extends Crop {
   }
   getYieldInKg() {
     return Math.pow(this.acres * 2.6, 1.1)
-
+  }
 }
-}
 
-
-module.exports = { Sugarcane, Wheat, Crop}
+module.exports = {Sugarcane, Wheat, Crop}
